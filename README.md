@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+BorrowBasket is an online item renting marketplace where a host lists his/her personal items to earn money and guests can borrow or rent items for a fixed duration for their listed prices.
+Project Link : https://nextjs-borrowbucket.vercel.app/
+
 ## Getting Started
 
 First, run the development server:
