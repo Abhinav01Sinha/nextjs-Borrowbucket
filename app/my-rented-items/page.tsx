@@ -1,6 +1,5 @@
 import { getServerSession } from "next-auth";
 import React from "react";
-import { authOptions } from "../api/auth/[...nextauth]/option";
 
 import { Booking, BookingStatus, Item, User } from "@/types";
 
@@ -12,6 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { BookingModel } from "@/Schemas/booking";
 import { ItemModel } from "@/Schemas/item";
 import { UserModel } from "@/Schemas/user";
+import { authOptions } from "../api/auth/[...nextauth]/option";
 
 async function MyRentedItemPage() {
   const session = await getServerSession(authOptions);

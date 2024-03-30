@@ -1,4 +1,3 @@
-import { authOptions } from "@/app/api/auth/[...nextauth]/option";
 import { getServerSession } from "next-auth";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,6 +14,7 @@ import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import SignOutButton from "./SignOutButton";
 import SignInButton from "./SignInButton";
+import { authOptions } from "@/app/api/auth/[...nextauth]/option";
 
 async function HeaderHost() {
   const session = await getServerSession(authOptions);

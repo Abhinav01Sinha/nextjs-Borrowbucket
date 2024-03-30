@@ -16,8 +16,8 @@ import ItemRatingAndReview from "./_components/item-rating-and-review";
 import { BookingModel } from "@/Schemas/booking";
 import { addDays } from "date-fns";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/authOptions";
 import Link from "next/link";
+import { authOptions } from "@/app/api/auth/[...nextauth]/option";
 
 const getBookedDates = (startdate: Date, numberOfDays: number): Date[] => {
   const bookedDates: Date[] = [];

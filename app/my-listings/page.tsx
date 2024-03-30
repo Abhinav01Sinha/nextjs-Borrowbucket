@@ -11,9 +11,9 @@ import { Plus } from "lucide-react";
 import ListYourItemComponent from "./_component/list-your-item-component";
 import { ItemModel } from "@/Schemas/item";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/option";
 import SingleListing from "./_component/single-listing";
 import { redirect } from "next/navigation";
+import { authOptions } from "../api/auth/[...nextauth]/option";
 
 async function MyListingsPage() {
   const session = await getServerSession(authOptions);

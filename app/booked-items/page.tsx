@@ -1,5 +1,4 @@
 import { BookingModel } from "@/Schemas/booking";
-import { authOptions } from "@/lib/authOptions";
 import { getServerSession } from "next-auth";
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -7,6 +6,7 @@ import { ObjectId } from "mongodb";
 import { BookingStatus } from "@/types";
 import { format } from "date-fns";
 import { formatAmountForDisplay } from "@/lib/utils";
+import { authOptions } from "../api/auth/[...nextauth]/option";
 
 async function BookedItemPage() {
   const session = await getServerSession(authOptions);

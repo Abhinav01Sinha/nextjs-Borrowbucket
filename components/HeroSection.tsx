@@ -3,8 +3,8 @@ import Link from "next/link";
 import React from "react";
 import { buttonVariants } from "./ui/button";
 import Image from "next/image";
-import { authOptions } from "@/app/api/auth/[...nextauth]/option";
 import { getServerSession } from "next-auth";
+import { authOptions } from "@/app/api/auth/[...nextauth]/option";
 
 async function HeroSection() {
   const session = await getServerSession(authOptions);

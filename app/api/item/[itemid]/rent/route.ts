@@ -1,6 +1,6 @@
 import { BookingModel } from "@/Schemas/booking";
 import { ItemModel } from "@/Schemas/item";
-import { authOptions } from "@/lib/authOptions";
+import { authOptions } from "@/app/api/auth/[...nextauth]/option";
 import { connectToDB } from "@/lib/mongodb";
 import { BookingStatus, Item } from "@/types";
 import { isSameDay } from "date-fns";

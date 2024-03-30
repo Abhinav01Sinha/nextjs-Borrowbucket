@@ -1,7 +1,7 @@
 import { ItemModel } from "@/Schemas/item";
+import { authOptions } from "@/app/api/auth/[...nextauth]/option";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { itemCategories } from "@/data";
-import { authOptions } from "@/lib/authOptions";
 import { connectToDB } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import { getServerSession } from "next-auth";
