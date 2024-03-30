@@ -12,7 +12,7 @@ import {
 } from "./ui/dropdown-menu";
 import { Menu } from "lucide-react";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/api/auth/[...nextauth]/option";
 import SignOutButton from "./SignOutButton";
 import SignInButton from "./SignInButton";
 
