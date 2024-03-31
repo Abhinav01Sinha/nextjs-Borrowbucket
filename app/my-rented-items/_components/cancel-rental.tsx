@@ -78,7 +78,6 @@ function CancelRental({ forItem }: { forItem: Booking }) {
 
 export default CancelRental;
 
-// "use client";
 // import { Booking, BookingStatus, Item } from "@/types";
 // import { zodResolver } from "@hookform/resolvers/zod";
 // import { useRouter } from "next/navigation";
