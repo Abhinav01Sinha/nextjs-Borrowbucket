@@ -20,7 +20,7 @@ function Footer() {
                 Policies
               </Link>
             </div>
-            <Link href="https://grepsoft.com" className="text-sm">
+            <Link href="/" className="text-sm">
               &copy;2024 Abhinav Sinha
             </Link>
           </div>
