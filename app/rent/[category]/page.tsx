@@ -96,7 +96,11 @@ async function RentCategoryPage({ params }: { params: { category: string } }) {
             <CardContent className="px-0">
               <Image
                 className="p-0 max-h-60 sm:max-h-60"
-                src={item.photos.at(0)}
+                src={
+                  item.photos.length > 0
+                    ? item.photos.at(0)
+                    : `/rent-${params.category}.jpg`
+                }
                 alt={item.name}
                 width={340}
                 height={100}
